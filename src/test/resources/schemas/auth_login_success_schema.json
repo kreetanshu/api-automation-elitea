@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AuthLoginSuccess",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["token"],
+  "properties": {
+    "token": { "type": "string", "minLength": 1 }
+  }
+}
