@@ -3,6 +3,25 @@
   "title": "CartList",
   "type": "array",
   "items": {
-    "$ref": "cart.schema.json"
+    "type": "object",
+    "additionalProperties": true,
+    "required": ["id", "userId", "products"],
+    "properties": {
+      "id": { "type": "number" },
+      "userId": { "type": "number" },
+      "date": { "type": "string" },
+      "products": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": true,
+          "required": ["productId", "quantity"],
+          "properties": {
+            "productId": { "type": "number" },
+            "quantity": { "type": "number" }
+          }
+        }
+      }
+    }
   }
 }
