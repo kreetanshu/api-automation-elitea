@@ -1,8 +1,12 @@
 package com.openapistore.models.users;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class GeoLocation {
     private String lat;
-    private String "long";
+
+    @JsonProperty("long")
+    private String longitude;
 
     public GeoLocation() {
     }
@@ -15,11 +19,11 @@ public class GeoLocation {
         this.lat = lat;
     }
 
-    public String getLong() {
-        return "long";
+    public String getLongitude() {
+        return longitude;
     }
 
-    public void setLong(String longitude) {
-        this."long" = longitude;
+    public void setLongitude(String longitude) {
+        this.longitude = longitude;
     }
 }
