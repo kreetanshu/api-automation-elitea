@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="OpenAPIStore Functional API Test Cases" verbose="1" parallel="false">
+  <test name="API Tests">
+    <packages>
+      <package name="com.openapistore.tests.*"/>
+      <package name="com.openapistore.tests.auth"/>
+      <package name="com.openapistore.tests.products"/>
+      <package name="com.openapistore.tests.users"/>
+      <package name="com.openapistore.tests.carts"/>
+    </packages>
+  </test>
+</suite>
